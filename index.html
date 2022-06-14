@@ -1,87 +1,110 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html lang="en">
 <head>
-    <title>Eurico Nicacio</title>
+    <title>nCKbr</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
     <link rel="shortcut icon" href="favicon.ico">  
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
     
     <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
-/>
-    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
     <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    
+
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
     
 </head> 
 
 <body>
     <!-- ******HEADER****** --> 
     <header class="header">
-        <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" width="140" alt="WAL" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Eurico Nicacio</h1>
-                <h2 class="desc">Software Developer / Ethical Hacker / Data Scientist / GIS+Geodesy Specialist</h2>   
-                <ul class="social list-inline">
-                    <li><a href="http://lattes.cnpq.br/8395981499413551"><i class="fa fa-book"></i></a></li>
-                    <li><a href="http://euriconicacio.github.io/blog"><i class="fa fa-feed"></i></a></li>
-                    <li><a href="http://github.com/euriconicacio"><i class="fa fa-github-alt"></i></a></li>                  
-                    <li class="last-item"><a href="mailto:euriconicaciojr@gmail.com"><i class="fa fa-envelope"></i></a></li>                 
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="mailto:euriconicaciojr@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" width=180/>
+		            <div class="profile-content">
+		                <h1 class="name">Eurico Nicacio</h1>
+		                <h2 class="desc">Senior Security & Software Engineer | Ethical Hacker | Indepenent CyberSecurity Researcher | Former CTF player @ 0x8Layer</h2>   
+		                <ul class="social list-inline">
+		                    <li class="list-inline-item"><a href="https://twitter.com/euriconicacio"><i class="fab fa-twitter"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://br.linkedin.com/in/euriconicacio"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/euriconicacio"><i class="fab fa-github-alt"></i></a></li>    
+
+		                    <li class="list-inline-item last-item"><a href="https://euriconicacio.github.io/blog/"><i class="fa-solid fa-blog"></i></a></li>                
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->
+	                <a class="btn btn-cta-primary" href="mailto:euriconicaciojr@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
+	            </div><!--//col-->
+	        </div><!--//row-->         
         </div><!--//container-->
     </header><!--//header-->
     
-    <div class="container sections-wrapper">
+    <div class="container sections-wrapper py-5">
         <div class="row">
-            <div class="primary col-md-8 col-sm-12 col-xs-12">
+            <div class="primary col-lg-8 col-12">
                 <section class="about section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p align="justify"> I'm a software developer/data scientist/ethical hacker living in Brazil. More recently, I'm focused on developing multi-language applications on Physical Geodesy theoretical/academic and practical behalf. I hold a MSc degree and I'm a PhD candidate in this same area, which I aim to develop everyday with love. I also enjoy handling and treating Big Data (especially Geo Big Data), applying on them Machine Learning techniques for various purposes in my spare time - ML is what I call my recreation, and I consider myself as a huge enthusiast of the study field. In addition, I have a strong academic background, with a number of published papers in renowed journals of my area.<br><br>I like coffee/Red Bull, music and astrophysics. I enjoy building stuff, investigating new technologies and general hacking. If there's a hackathon in BR or a Geodesy conference anywhere in the world, you may see me there. </p>                             
+                            <p>I'm a Senior Security & Software Engineer, with wide background on Offensive Security/Red Team and Software Development with various objectives (20+ years each, approximately).</p> 
+                            <p>Currently, I'm working at NextRoll, a marketing technology company delivering products ambitious companies use and rely on to grow their businesses. Powered by machine learning and integrated data platforms, its technology serves tens of thousands of businesses globally through its business units.</p>
+                            <p>In addition, since I'm pursuing my PhD degree, I'm focused on developing multi-language applications on Physical Geodesy theoretical/academic and practical behalf. </p>
+                            <br />
+                            <p>I'm absolutely into the hacking context - a Hacker Cultuer & Open Source software advocate, and a huge fan of CTFs and hacking competitions. Hack the planet!</p>
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
     
                <section class="latest section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Latest Projects</h2>
-                        <div class="content">             
-         
+                        <div class="content">  
+
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="http://euriconicacio.github.io/spgg" target="_blank">The #100DaysOfCode Challenge</a><span class="label label-theme">open source</span><span class="label label-theme">flagship</span></h3>
+                                <h3 class="title"><a href="https://www.hackthebox.eu/home/users/profile/177941" target="_blank">HackTheBox training</a></h3>
+                                <p class="summary">by HackTheBox.com</p>
+                                <div class="featured-image">
+                                    <a href="https://www.hackthebox.eu/home/users/profile/177941" target="_blank">
+                                    <img width="60%" src="https://www.hackthebox.com/images/landingv3/OG_B2C_Homepage.jpg" alt="HTB" />
+                                    </a>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p align="justify"> Lately I have went back focusing on daily hacking training on HTB, given the opportunities and possibilities upcoming. With an intersting start - 50 challenges in 2 weeks ("playing" at night), I'll go back to the boxes shortly. Enjoy!</p>
+                                </div><!--//desc-->         
+                                <a class="btn btn-cta-secondary" href="https://www.hackthebox.eu/home/users/profile/177941" target="_blank"><i class="fa-solid fa-font-awesome"></i> View on my HTB profile</a>                 
+                            </div><!--//item-->
+                            <hr class="divider" />  
+                            
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="http://euriconicacio.github.io/blog" target="_blank">The #100DaysOfCode Challenge</a></h3>
                                 <p class="summary">by 100DaysOfCode.com</p>
                                 <div class="featured-image">
                                     <a href="http://euriconicacio.github.io/blog" target="_blank">
-                                    <img class="img-responsive project-image" src="http://www.finaldraftdesign.com/wp-content/uploads/2018/04/100DaysofCode_1200x500.jpg" alt="100 Days" />
+                                    <img width="60%" src="http://www.finaldraftdesign.com/wp-content/uploads/2018/04/100DaysofCode_1200x500.jpg" alt="100 Days" />
                                     </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                        </div>
-                                    </div>
                                     
                                 <div class="desc text-left">                                    
                                     <p align="justify"> Since I have publicly commited to th #100DaysOfCode Challenge, you can check my daily progress on <a href="http://euriconicacio.github.io/blog"><i>my blog</i></a>. I have decided to present daily portions of Python coding and Ethical Hacking stuff on it. Enjoy!</p>
@@ -90,91 +113,75 @@
                             </div><!--//item-->
                             <hr class="divider" />  
                                                
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="http://euriconicacio.github.io/spgg" target="_blank">SPGG - v 2.1</a><span class="label label-theme">open source</span><span class="label label-theme">flagship</span></h3>
-                                <p class="summary">Single Point GEM [Global Earth Models] Generator</p>
-                                <div class="featured-image">
-                                    <a href="http://euriconicacio.github.io/spgg" target="_blank">
-                                    <img class="img-responsive project-image" src="https://euriconicacio.github.io/spgg/help/lib/NewItem51.png" alt="SPGG" />
-                                    </a>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p align="justify"> Single-Point GEM Generator [SPGG] is a Python-based standalone application that generates extracts of Global Geopotential Models in a pointwise form, using a list of points drawn up and formatted by the user, the model specifications and a direct interaction with the ICGEM (International Centre for Global Earth Models) web service.</p>
-                                </div><!--//desc-->         
-                                <a class="btn btn-cta-secondary" href="http://euriconicacio.github.io/spgg" target="_blank"><i class="fa fa-github"></i> View on GitHub</a>                 
-                            </div><!--//item-->
-                            <hr class="divider" />
-			    <div class="item row">
+                            <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12" href="https://www.dropbox.com/s/k422y6iyrf45ubr/Artigo_IX_Hotine_Marussi_FINAL.pdf?dl=0" target="_blank">
-                                <img class="img-responsive project-image" src="https://media.licdn.com/mpr/mpr/gcrc/dms/image/C4E12AQGflk8Q9GAxcA/article-cover_image-shrink_600_2000/0?e=2130710400&v=beta&t=j7Uu6wLs3-2vxhP8anr-FGfTQPhz0YUExRHBHgP2ge4" alt="Web Scraping" />
+                                <img width="80%" class="img-responsive project-image" src="https://media.licdn.com/mpr/mpr/gcrc/dms/image/C4E12AQGflk8Q9GAxcA/article-cover_image-shrink_600_2000/0?e=2130710400&v=beta&t=j7Uu6wLs3-2vxhP8anr-FGfTQPhz0YUExRHBHgP2ge4" alt="Web Scraping" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="#" target="_blank">Web Scraping</a> <span class="label label-theme">open source</span></h3>
+                                    <h3 class="title"><a href="#" target="_blank">Web Scraping</a></h3>
                                     <p align="justify">Web scraping, web harvesting, or web data extraction is [big] data scraping used for extracting data from websites. Web scraping software may access the World Wide Web directly using the Hypertext Transfer Protocol. In this personal project, I am always developing a series of tools and pieces of code in both R and Python to extract valuable information, in the big data dimension, from different websites.</p>
                                     <p><a class="more-link" href="#"><i class="fa fa-external-link"></i> Find out more</a></p>
-				    <p><a class="btn btn-cta-secondary" href="#"><i class="fa fa-github"></i> View on GitHub</a></p>	
+				                    <p><a class="btn btn-cta-secondary" href="#"><i class="fab fa-github-alt"></i> View on GitHub</a></p>	
                                 </div><!--//desc-->                          
                             </div><!--//item-->
                             
-			    <div class="item row">
+			                <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12" href="https://www.dropbox.com/s/k422y6iyrf45ubr/Artigo_IX_Hotine_Marussi_FINAL.pdf?dl=0" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/poster.png" alt="NH calculator" />
+                                <img width="80%" class="img-responsive project-image" src="assets/images/projects/poster.png" alt="NH calculator" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                                     <h3 class="title"><a href="hhttps://www.dropbox.com/s/k422y6iyrf45ubr/Artigo_IX_Hotine_Marussi_FINAL.pdf?dl=0" target="_blank">Alternative Approaches for Modeling Seasonal Signals from Amazon Basin GPS Time Series</a> <span class="label label-theme">open source</span></h3>
                                     <p align="justify">The present research deals with different techniques of decomposition and identification of seasonal signals present in the GPS time series. These are a classical approach through Singular Spectral Analysis (SSA) implementation; and a modern approach through the Empirical Mode Decomposition (EMD) algorithm and its variations.</p>
                                     <p><a class="more-link" href="https://www.dropbox.com/s/k422y6iyrf45ubr/Artigo_IX_Hotine_Marussi_FINAL.pdf?dl=0" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-				    <p><a class="btn btn-cta-secondary" href="https://www.dropbox.com/s/718vty043fii76b/Poster%20HMS%202018.pdf?dl=0" target="_blank"><i class="fa fa-github"></i> View Poster</a></p>	
+				                    <p><a class="btn btn-cta-secondary" href="https://www.dropbox.com/s/718vty043fii76b/Poster%20HMS%202018.pdf?dl=0" target="_blank"><i class="fa-regular fa-file"></i> View Poster</a></p>	
                                 </div><!--//desc-->                          
                             </div><!--//item-->
                             <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/euriconicacio/GeodesyTools" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/nh.png" alt="NH calculator" />
+                                <img width="80%" class="img-responsive project-image" src="assets/images/projects/nh.png" alt="NH calculator" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/euriconicacio/GeodesyTools" target="_blank">Normal Heights iterative calculation</a> <span class="label label-theme">open source</span></h3>
+                                    <h3 class="title"><a href="https://github.com/euriconicacio/GeodesyTools" target="_blank">Normal Heights iterative calculation</a></h3>
                                     <p align="justify">Algorithm for calculating normal heights iterativelly from orthometric heights (MSL) and gravimetric observations. Such inovative method enables determining these heights without the usage of GGMs functionals or without considerations on local <i>datum</i> bias.</p>
                                     <p><a class="more-link" href="http://www.cbcg.ufpr.br/home/wp-content/uploads/2018/05/CBCG_2018_paper_50.pdf" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-				    <p><a class="btn btn-cta-secondary" href="https://github.com/euriconicacio/GeodesyTools" target="_blank"><i class="fa fa-github"></i> View on GitHub</a></p>	
+                                    <p><a class="btn btn-cta-secondary" href="https://github.com/euriconicacio/GeodesyTools" target="_blank"><i class="fab fa-github-alt"></i> View on GitHub</a></p>	
                                 </div><!--//desc-->                          
                             </div><!--//item-->
                             <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/euriconicacio/GeodesyTools" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/rbmcigs.png" alt="RBMC/IGS Data Downloader" />
+                                <img width="80%" class="img-responsive project-image" src="assets/images/projects/rbmcigs.png" alt="RBMC/IGS Data Downloader" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/euriconicacio/GeodesyTools" target="_blank">RBMC/IGS Data Downloader</a> <span class="label label-theme">open source</span></h3>
+                                    <h3 class="title"><a href="https://github.com/euriconicacio/GeodesyTools" target="_blank">RBMC/IGS Data Downloader</a></h3>
                                     <p align="justify">RBMC and IGS Data Downloader are Python-based standalone applications created with the purpose of facilitating the acquisition of geospatial data from the Brazilian Continuous Monitoring Network - BCMN, composed of raw GNSS observations, and precise ephemeris provided by the International GNSS Service - IGS. </p>
                                     <p><a class="more-link" href="http://docs.fct.unesp.br/departamentos/cartografia/eventos/2017_IV_SBG/_artigos/2017_SBG_CTIG_paper_26.pdf" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-					<p><a class="btn btn-cta-secondary" href="https://github.com/euriconicacio/GeodesyTools" target="_blank"><i class="fa fa-github"></i> View on GitHub</a></p>	
+					                <p><a class="btn btn-cta-secondary" href="https://github.com/euriconicacio/GeodesyTools" target="_blank"><i class="fab fa-github-alt"></i> View on GitHub</a></p>	
                                 </div><!--//desc-->                          
                             </div><!--//item-->
                             
-                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
+                <section class="projects section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Other Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="https://github.com/Kalebu/alright" target="_blank">alright</a> <span class="badge badge-theme">Free</span></h3>
+                                <p class="summary">Main contributor - Python wrapper for WhatsApp web made with selenium inspired by PyWhatsApp.</p>
+                                <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap4-resume-cv-template-for-developers-pillar/" target="_blank"><i class="fas fa-external-link-alt"></i>Download Now</a></p>
+                            </div><!--//item-->
                             
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
                 
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Other Projects</h2>
+                <section class="experience section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Work Experience</h2>
                         <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="#">Global Geopotential Models evaluation in Brazil</a></h3>
-                                <p class="summary" align="justify">The aim of this project is to perform quantitative analysis of the adequacy of the main currently existing Global Geopotential Models (GGMs) for modeling height anomalies throughout Brazil.</p>
-                                <p><span class="label label-theme">Classified information</span></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="#">Scalar Free and Fixed forms of the Geodetic Boundary Value Problem (GBVP) applie to the Colorado Experiment</a></h3>
-                                <p class="summary" align="justify">The goal of this experiment is to assess the repeatability of potential values as IHRS coordinates using different computation approaches. Based on the comparison of the results, a set of standards should be identified to get as similar and compatible results as possible.</p>
-                                <p><span class="label label-theme">Classified information</span></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="#">Finite Element Method and Boundary Element Method applied solving Geodetic Boundary Value Problems</a> </h3>
-                                <p class="summary" align="justify">The goal of this project is to present the finite and boundary element schemes for solving the Earth potential problems in 3D domains above the Earth surface. To that goal, we formulate the boundary-value problem (BVP) consisting of the Laplace equation outside the Earth accompanied by the Neumann as well as the Dirichlet boundary conditions (BC).  </p>
-                                <p><span class="label label-theme">Classified information</span></p>
-                            </div><!--//item-->
+                            <p>Please, refer to my <a href="https://br.linkedin.com/in/euriconicacio">LinkedIn</a> profile.</p>
                             
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -182,123 +189,110 @@
                 <section class="github section">
                     <div class="section-inner">
                         <h2 class="heading">My GitHub</h2>
-			<script
-			  src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"
-			></script>
+                        <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
 
-			<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-			<link
-			  rel="stylesheet"
-			  href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
-			/>
+                        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+                        <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css" />
 
-			<!-- Prepare a container for your calendar. -->
-			<div class="calendar">
-			    <!-- Loading stuff -->
-			    Loading the data just for you.
-			</div>
+                        <!-- Prepare a container for your calendar. -->
+                        <div class="calendar">
+                            <!-- Loading stuff -->
+                            Loading the data just for you.
+                        </div>
 
-			<script>
-			    GitHubCalendar(".calendar", "euriconicacio");
-			</script>
-                        
+                        <script>
+                            GitHubCalendar(".calendar", "euriconicacio");
+                        </script>
+                                    
                     </div><!--//secton-inner-->
                 </section><!--//section-->
             </div><!--//primary-->
-            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+            <div class="secondary col-lg-4 col-12">
                  <aside class="info aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Manaus, AM, Brazil</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">euriconicaciojr@gmail.com</a></li>
-                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">http://euriconicacio.github.io</a></li>
-                                <li><i class="fa fa-th-list "></i><span class="sr-only">Lattes:</span><a href="http://lattes.cnpq.br/8395981499413551">Lattes</a></li>
-				<li><i class="fa fa-th-list "></i><span class="sr-only">ResearchGate:</span><a href="https://www.researchgate.net/profile/Eurico_Nicacio">ResearchGate</a></li>
-                                <li><i class="fa fa-feed"></i><span class="sr-only">Blog:</span><a href="http://euriconicacio.github.io/blog">Blog</a></li>
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Curitiba, PR, Brazil</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">euriconicaciojr@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="https://euriconicacio.github.io/blog/">blog</a></li>
+                                <li><i class="fas fa-blog"></i><span class="sr-only">HackTheBox:</span><a href="https://www.hackthebox.eu/home/users/profile/177941">h3llh0und</a></li>
                             </ul>
+                            <br />
+                            <center>
+                                <a href="https://www.hackthebox.eu/home/users/profile/177941"><img src="https://www.hackthebox.eu/badge/image/177941" /></a>
+                            </center>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//aside-->
                 
                 <aside class="skills aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Skills</h2>
                         <div class="content">
-                            <p class="intro">
-                                Strong background in <i>oldschool</i> programming languages - Clipper, Cobol, Basic; gone through C, C++, C#, Matlab, Web Development languages (HTML, ASP, PHP, JS), T-SQL, and others. Nowadays, in love with Python & R.</p>
                             
                             <div class="skillset">
-                               
+
                                 <div class="item">
-                                    <h3 class="level-title">Python <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Python">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
+                                    <h3 class="level-title">Hacking<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" ><i class="fas fa-info-circle"></i>Expert</span></h3>
+
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 98%" aria-valuenow="98"  aria-valuemin="0" aria-valuemax="98"></div>
+									</div><!--//level-bar-->                               
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">R <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="R">Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="80%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
+                                    <h3 class="level-title">Python &amp; frameworks<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" ><i class="fas fa-info-circle"></i>Expert</span></h3>
+
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 96%" aria-valuenow="96"  aria-valuemin="0" aria-valuemax="96"></div>
+									</div><!--//level-bar-->                               
                                 </div><!--//item-->
 
-                                
                                 <div class="item">
-                                    <h3 class="level-title">Matlab<span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
+                                    <h3 class="level-title">Shell Script<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" ><i class="fas fa-info-circle"></i>Pro</span></h3>
+
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 90%" aria-valuenow="90"  aria-valuemin="0" aria-valuemax="90"></div>
+									</div><!--//level-bar-->                               
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">C/C++/C#<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" ><i class="fas fa-info-circle"></i>Pro</span></h3>
+
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 82%" aria-valuenow="82"  aria-valuemin="0" aria-valuemax="82"></div>
+									</div><!--//level-bar-->                               
                                 </div><!--//item-->
                                 
                                 <div class="item">
-                                    <h3 class="level-title">Linux<span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
+                                    <h3 class="level-title">JavaScript<span class="level-label" data-bs-toggle="tooltip" data-bs-placement="left" ><i class="fas fa-info-circle"></i>Pro</span></h3>
+                                    <div class="level-bar progress">
+									    <div class="progress-bar level-bar-inner" role="progressbar" style="width: 80%" aria-valuenow="80"  aria-valuemin="0" aria-valuemax="80"></div>
+									</div><!--//level-bar-->                                   
                                 </div><!--//item-->
                                 
-                                <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3, PHP<span class="level-label">Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="75%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">GIS Tools & programming <span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="95%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
+                                <p><a class="more-link" href="https://github.com/euriconicacio"><i class="fas fa-external-link-alt"></i>More on GitHub</a></p> 
                             </div>              
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </aside><!--//section-->
                 
                 <aside class="education aside section">
-                    <div class="section-inner">
+                    <div class="section-inner shadow-sm rounded">
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> PhD Candidade - Geodetic Sciences (Physical Geodesy)</h3>
-                                <h4 class="university">Federal University of Paraná (UFPR) <span class="year">(2018-...)</span></h4>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> PhD Candidate in Geodetic Sciences</h3>
+                                <h4 class="university">Federal University of Paraná <span class="year">(2018 - ...)</span></h4>
                             </div><!--//item-->
                             <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Geodetic Sciences (Physical Geodesy)</h3>
-                                <h4 class="university">Federal University of Paraná (UFPR) <span class="year">(2016-2017)</span></h4>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc in Geodetic Sciences</h3>
+                                <h4 class="university">Federal University of Paraná <span class="year">(2016-2017)</span></h4>
                             </div><!--//item-->
                             <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BEng Cartographic Engineering</h3>
-                                <h4 class="university">Military Engineering Institute (IME) <span class="year">(2006-2010)</span></h4>
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BEng in Cartographic Engineering</h3>
+                                <h4 class="university">Military Engineering Institute <span class="year">(2016-2010)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -325,14 +319,14 @@
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                              
+                
                 <aside class="list music aside section">
                     <div class="section-inner">
                         <h2 class="heading">Favourite coding music</h2>
                         <div class="content">
                             <ul class="list-unstyled">
                                 <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=pWB5JZRGl0U" target="_blank">Motörhead - Ace of Spades</a></li>
-				<li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=i97OkCXwotE" target="_blank">Pantera - Cowboys from Hell</a></li>    
+				                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=i97OkCXwotE" target="_blank">Pantera - Cowboys from Hell</a></li>    
                                 <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=ZPUZwriSX4M" target="_blank">Slipknot - Spit It Out</a></li>
                                 <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=z8ZqFlw6hYg" target="_blank">Slayer - Raining Blood</a></li>
                                 <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=N0i9yCZ5D8E" target="_blank">Black Sabbath - Crazy Train</a></li>
@@ -358,14 +352,13 @@
                                 <li><i class="fa fa-calendar"></i> <a href="http://www.space.dtu.dk/english/gghs2018" target="_blank">GGHS 2018</a> (Copenhagen, Denmark) </li>
                                 <li><i class="fa fa-calendar"></i> <a href="http://geoweb2.inegi.org.mx/sirgas2018/html/en/index.html" target="_blank">SIRGAS 2018 Symposium</a> (Aguascalientes, Mexico)</li>
                                 <li><i class="fa fa-calendar"></i> <a href="https://www.ufpe.br/documents/39451/1384233/Anais+do+VII+SIMGEO/2ff23c73-935d-4418-8728-fefb24630f34" target="_blank">VII SIMGEO</a> (Recife, PE, Brazil) </li>
-				<li><i class="fa fa-calendar"></i> <a href="https://gdgmanaus.com/" target="_blank">Jungle’s DevFest </a> (Manaus, AM, Brazil) </li>
-				<li><i class="fa fa-calendar"></i> <a href="http://www.feiradopolodigitaldemanaus.com.br/" target="_blank">I Feira Polo Digital de Manaus</a> (Manaus, AM, Brazil) </li>
+                                <li><i class="fa fa-calendar"></i> <a href="https://gdgmanaus.com/" target="_blank">Jungle’s DevFest </a> (Manaus, AM, Brazil) </li>
+                                <li><i class="fa fa-calendar"></i> <a href="http://www.feiradopolodigitaldemanaus.com.br/" target="_blank">I Feira Polo Digital de Manaus</a> (Manaus, AM, Brazil) </li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
                 </aside><!--//section-->
-                
-               
+              
             </div><!--//secondary-->    
         </div><!--//row-->
     </div><!--//masonry-->
@@ -373,17 +366,17 @@
     <!-- ******FOOTER****** --> 
     <footer class="footer">
         <div class="container text-center">
-                <small class="copyright">We do not forgive. We do not forget. Expect us.</small>
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
         </div><!--//container-->
     </footer><!--//footer-->
  
     <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
     <!-- github calendar plugin -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
     <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
     <!-- github activity plugin -->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
@@ -392,3 +385,4 @@
     <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
 </html> 
+
