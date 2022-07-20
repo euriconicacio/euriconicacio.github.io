@@ -145,7 +145,7 @@
         monitorRunDependencies: function(left) {
           this.totalDependencies = Math.max(this.totalDependencies, left);
           Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
-
+          
           if (left == 0) {
             $('.emscripten-status').hide();
             $('.fullscreen').show();
@@ -311,6 +311,7 @@ function assert(check, msg) {
             Module.printErr('Preloading file ' + that.name + ' failed');
           }
         }, false, true); // canOwn this data in the filesystem, it is a slide into the heap that will never change
+        Module.requestFullScreen(false, false);
         this.requests[this.name] = null;
       },
     };
