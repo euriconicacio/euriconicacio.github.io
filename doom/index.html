@@ -55,6 +55,9 @@
     <div class="emscripten">
       <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
     </div>
+    <div class="fullscreen">
+      <a id="fullscreen" href="javascript:void(0);">[ Fullscreen ]</a><br/><br/>
+    </div>
     <div class="emscripten-padding">
       <pre style="color:#bbb">
 
@@ -145,7 +148,7 @@
         monitorRunDependencies: function(left) {
           this.totalDependencies = Math.max(this.totalDependencies, left);
           Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
-          
+
           if (left == 0) {
             $('.emscripten-status').hide();
             $('.fullscreen').show();
@@ -311,7 +314,6 @@ function assert(check, msg) {
             Module.printErr('Preloading file ' + that.name + ' failed');
           }
         }, false, true); // canOwn this data in the filesystem, it is a slide into the heap that will never change
-        Module.requestFullScreen(false, false);
         this.requests[this.name] = null;
       },
     };
